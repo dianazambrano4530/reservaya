@@ -1,6 +1,8 @@
 ReservaYa – Sistema de Reservas Hoteleras
 Aplicación web desarrollada en Java Spring Boot y Thymeleaf que permite consultar la disponibilidad de habitaciones, ver detalles e imágenes, y realizar reservas en el Hotel El Bosque de manera fácil, intuitiva y segura.
+
 Tabla de Contenidos
+
 •	Descripción
 •	Características
 •	Tecnologías
@@ -8,9 +10,13 @@ Tabla de Contenidos
 •	Estructura del Proyecto
 •	Funcionalidades Implementadas
 •	Créditos
+
 Descripción
+
 ReservaYa es un prototipo funcional de sistema de reservas hoteleras orientado a la gestión de habitaciones y reservas para el Hotel El Bosque. Permite a los usuarios consultar disponibilidad, ver imágenes y detalles de las habitaciones, reservar y recibir confirmación inmediata, todo desde una interfaz responsiva y moderna.
+
 Características
+
 •	Consulta de disponibilidad de habitaciones según fecha y cantidad de huéspedes.
 •	Visualización de detalles e imágenes de cada tipo de habitación.
 •	Proceso de reserva con formulario y confirmación.
@@ -25,16 +31,23 @@ Tecnologías
 •	Gestión de dependencias: Maven
 •	Control de versiones: Git, GitHub
 Instalación y Ejecución
+
 1.	Clona el repositorio:
+
 bash
 git clone https://github.com/dianazambrano4530/prototipo-reservaya.git
+
 cd prototipo-reservaya
-2.	Compila y ejecuta la aplicación:
+
+3.	Compila y ejecuta la aplicación:
+
 bash
 mvn clean package
 mvn spring-boot:run
-3.	Abre tu navegador en:
+
+5.	Abre tu navegador en:
 text
+
 http://localhost:8080
 Estructura del Proyecto
 text
