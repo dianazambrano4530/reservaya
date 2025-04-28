@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hotel El Bosque - Confirmación de Reserva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card text-center">
+            <div class="card-header bg-success text-white">
+                <h3>¡Reserva Confirmada!</h3>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">¡Gracias por su reserva!</h4>
+                    <p>Su reserva ha sido procesada y confirmada correctamente.</p>
+                </div>
+                
+                <h5 class="card-title">Detalles de la Reserva</h5>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">Número de reserva: <span th:text="${reserva.id}">0</span></li>
+                    <li class="list-group-item">Habitación: <span th:text="${reserva.habitacion.tipo}">Tipo</span></li>
+                    <li class="list-group-item">Fecha de llegada: <span th:text="${reserva.fechaLlegada}">Fecha</span></li>
+                    <li class="list-group-item">Fecha de salida: <span th:text="${reserva.fechaSalida}">Fecha</span></li>
+                    <li class="list-group-item">Nombre: <span th:text="${reserva.nombreCliente}">Nombre</span></li>
+                    <li class="list-group-item">Email: <span th:text="${reserva.emailCliente}">Email</span></li>
+                    <li class="list-group-item">Teléfono: <span th:text="${reserva.telefonoCliente}">Teléfono</span></li>
+                    <li class="list-group-item">Estado: <span th:text="${reserva.estadoReserva}">Estado</span></li>
+                    <li class="list-group-item font-weight-bold">Monto total: $<span th:text="${reserva.montoTotal}">0.00</span></li>
+                </ul>
+                
+                <p>Hemos enviado un correo electrónico con los detalles de su reserva. Por favor, verifique su bandeja de entrada.</p>
+                
+                <a href="/" class="btn btn-primary">Volver al inicio</a>
+            </div>
+            <div class="card-footer text-muted">
+                Hotel El Bosque - Rivera, Huila
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
